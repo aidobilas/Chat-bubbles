@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    display: flex;
+    width: 600px;
+    height: 150px;
+    margin: 20px;
+    align-items: center;
+}
+
+.container-1 img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 30px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.container-1 p {
+    display: flex;
+    float: right;
+    width: 350px;
+    height: 160px;
+    background: #dddddd;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 20px 20px 20px 0;
+}
+
+
+.container-2 {
+    display: flex;
+    width: 600px;
+    height: 150px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.container-2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 30px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.container-2 p {
+    display: flex;
+    float: right;
+    width: 350px;
+    height: 130px;
+    background: #3bc06f;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.container-3 {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    margin: 20px;
+    align-items: center;
+}
+
+.container-3 img {
+    float: left;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 30px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.container-3 p {
+    display: flex;
+    float: right;
+    width: 200px;
+    height:60px;
+    background: #dddddd;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 20px 20px 20px 0;
+}
+
+.container-4 {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    margin-left: 180px;
+    align-items: center;
+}
+
+.container-4 img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 30px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.container-4 p {
+    display: flex;
+    float: right;
+    width: 220px;
+    height: 60px;
+    background: #3bc06f;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 20px;
+    border-radius: 20px 20px 0 20px;
+}
+
+/* img hover */
+.container-1:hover img {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.container-2:hover img {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.container-3:hover img {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.container-4:hover img {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/* traingle Tom */
+.important { 
+    position: relative;
+    color: rgba(black, .9);
+}
+
+.important::after {
+    content: "";
+    position: absolute;
+    left: -19px;
+    top: -10px;
+    border: 1em solid transparent;
+    border-color: transparent #dddddd transparent transparent;
+    border-width: 10px;
+}
+
+.important-2 { 
+    position: relative;
+    color: rgba(red, .9);
+}
+
+.important-2::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    border: 1em solid transparent;
+    border-color: transparent transparent transparent #3bc06f;
+    border-width: 10px;
+}
